@@ -46,3 +46,67 @@ double z1 = Convert.ToDouble(Console.ReadLine());
 System.Console.WriteLine("Введите z2");
 double z2 = Convert.ToDouble(Console.ReadLine());
 System.Console.WriteLine(d(x1, y1, z1, x2, y2, z2));*/
+
+
+//Задача25
+/*int SqA ( int a, int B )
+{
+    int A = a;
+    for (int i = 1; i < B; i ++)
+    {
+        a = a * A;
+    }
+    return a;
+}
+System.Console.WriteLine("Введите число A");
+int A = Convert.ToInt32(Console.ReadLine());
+System.Console.WriteLine("Введите число B");
+int B = Convert.ToInt32(Console.ReadLine());
+System.Console.WriteLine(SqA(A, B));*/
+
+
+//Задача27
+/*int Sum (int a)
+{
+    int sum = 0;
+    while (a > 0)
+    {
+        int num = a % 10;
+        a = a / 10;
+        sum = sum + num;  
+    }
+    return sum;
+}
+System.Console.WriteLine("Введите число");
+int a = Convert.ToInt32(Console.ReadLine());
+System.Console.WriteLine("Сумма чисел равна");
+System.Console.WriteLine(Sum(a));*/
+
+//Задача29
+/*int[] CreateArray(int size, int minValue, int maxValue)
+{
+    int[] array = new int[size];
+    for( int i = 0; i < size; i++)
+    {
+        array[i] = new Random().Next(minValue, maxValue +1);
+    }
+    return array;
+}
+
+void PrintArray(int[] array)
+{
+    for ( int i = 0; i < array.Length; i++)
+    {
+        System.Console.WriteLine(array[i] + " ");
+    }
+    System.Console.WriteLine();
+}
+
+System.Console.WriteLine("Укажите размер массива");
+int size = Convert.ToInt32(Console.ReadLine());
+System.Console.WriteLine("Введите минимальное значение массива");
+int minValue = Convert.ToInt32(Console.ReadLine());
+System.Console.WriteLine("Введите максимальное значение");
+int maxValue = Convert.ToInt32(Console.ReadLine());
+
+PrintArray(CreateArray(size, minValue, maxValue));*/
