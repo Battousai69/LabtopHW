@@ -69,12 +69,13 @@ System.Console.WriteLine(SqA(A, B));*/
 /*int Sum (int a)
 {
     int sum = 0;
-    while (a > 0)
+    do
     {
         int num = a % 10;
         a = a / 10;
         sum = sum + num;  
-    }
+    } while (a > 0);
+
     return sum;
 }
 System.Console.WriteLine("Введите число");
@@ -110,3 +111,103 @@ System.Console.WriteLine("Введите максимальное значени
 int maxValue = Convert.ToInt32(Console.ReadLine());
 
 PrintArray(CreateArray(size, minValue, maxValue));*/
+
+//Задача 34
+/*int[] CreateArray(int size)
+{
+    int[] array = new int[size];
+    for( int i = 0; i < size; i++)
+    {
+        array[i] = new Random().Next(100, 1000);
+    }
+    return array;
+}
+
+void PrintArray(int[] array)
+{
+    int count = 0;
+    for ( int i = 0; i < array.Length; i++)
+    {
+        {
+            System.Console.Write(array[i] + " ");
+        }
+        if(array[i] % 2 == 0)
+        {
+            count++;
+        }
+    
+    }
+    System.Console.WriteLine($"Колличество четных чисел в массиве {count}");
+}
+
+System.Console.WriteLine("Укажите размер массива");
+int size = Convert.ToInt32(Console.ReadLine());
+PrintArray(CreateArray(size));*/
+
+//Задача36
+/*int[] CreateArray(int size)
+{
+    int[] array = new int[size];
+    for( int i = 0; i < size; i++)
+    {
+        array[i] = new Random().Next(1, 10);
+    }
+    return array;
+}
+
+void PrintArray(int[] array)
+{
+    int sum = 0;
+    for ( int i = 0; i < array.Length; ++i )
+    {
+        {
+            System.Console.Write(array[i] + " ");
+        }
+    if(array[i] % 2 == 1)
+        {
+            sum = sum + array[i];
+        }
+    }
+    System.Console.WriteLine($"Сумма не четных членов массива равна {sum}");
+}
+
+System.Console.WriteLine("Укажите размер массива");
+int size = Convert.ToInt32(Console.ReadLine());
+PrintArray(CreateArray(size));*/
+
+//Задача 38
+/*double[] CreateArray(int size)
+{
+    double[] array = new double[size];
+    for( int i = 0; i < size; i++)
+    {
+        array[i] = Convert.ToDouble(new Random().Next(100, 1000))/100;
+    }
+    return array;
+}
+
+void PrintArray(double[] array)
+{
+    double max = Int32.MinValue;
+    double min = Int32.MaxValue;
+    for ( int i = 0; i < array.Length; i++)
+    {
+            {
+                System.Console.WriteLine(array[i] + " ");
+            }
+        if (array[i] > max)
+            {
+                max = array[i];
+            }
+        if (array[i] < min)
+            {
+                min = array[i];
+            }   
+     
+    }
+    System.Console.WriteLine($"Разница между = {(max - min), 2} ");
+}
+
+System.Console.WriteLine("Укажите размер массива");
+int size = Convert.ToInt32(Console.ReadLine());
+PrintArray(CreateArray(size));*/
